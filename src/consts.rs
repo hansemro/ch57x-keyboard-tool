@@ -1,2 +1,2 @@
-pub const VENDOR_ID: u16 = 0x1189;
-pub const PRODUCT_ID: u16 = 0x8890;
+pub const VENDOR_ID: &str = "0x1189";
+pub const PRODUCT_ID: &str = "0x8890";

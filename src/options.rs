@@ -9,10 +9,10 @@ pub struct Options {
     #[command(subcommand)]
     pub command: Command,
 
-    #[arg(long, default_value_t=VENDOR_ID, value_parser=hex_or_decimal)]
+    #[arg(long, default_value=VENDOR_ID, value_parser=hex_or_decimal)]
     pub vendor_id: u16,
 
-    #[arg(long, default_value_t=PRODUCT_ID, value_parser=hex_or_decimal)]
+    #[arg(long, default_value=PRODUCT_ID, value_parser=hex_or_decimal)]
     pub product_id: u16,
 
     #[arg(long, value_parser=parse_address)]
